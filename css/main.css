@@ -47,3 +47,11 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+ul#horizontal-list {
+    list-style: none;
+}
+
+ul#horizontal-list {
+    display: inline;
+    }
