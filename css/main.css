@@ -52,11 +52,3 @@ ul.posts li {
 ul#horizontal-list {
     list-style: none;
 }
-
-ul#horizontal-list li {
-    float: left;
-}
-
-ul#horizontal-list li a {
-    display: block;
-}
