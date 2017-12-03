@@ -1,5 +1,5 @@
 from random import *
-
+print('Welcome to Mastermind. Your goal is to try to guess the 4 colors that I have chosen')
 masterColors=['red','green','blue','yellow','brown','orange','black','white']
 mastermind=sample(masterColors,4) #mastermind selects its colors
 tries=5
@@ -12,7 +12,7 @@ while tries != 0:
         colorPick = int(input('Select a color then press [ENTER] 0=red, 1=green, 2=blue, 3=yellow, 4=brown, 5=orange, 6=black, 7=white: '))
         colorFromList = masterColors[colorPick]
         userChoice.append(colorFromList)
-    print(mastermind)
+        print(userChoice)
     print('You have picked')
     print(userChoice)
 
@@ -21,7 +21,8 @@ while tries != 0:
             print('The ' + userChoice[i] + ' color is in the right position')
         else: 
             if (userChoice[i] in mastermind):
-                print('The ' + userChoice[i] + ' color is in the list')
+                print('The ' + userChoice[i] + ' color is in the game')
             else:
-                print('The ' + userChoice[i] + ' color is not in list')
+                print('The ' + userChoice[i] + ' color is not in the game')
     tries = tries - 1
+    print('You have', tries, 'left')
