@@ -3,6 +3,7 @@ print('Welcome to Mastermind. Your goal is to try to guess the 4 colors that I h
 masterColors=['red','green','blue','yellow','brown','orange','black','white']
 mastermind=sample(masterColors,4) #mastermind selects its colors
 tries=5
+print(mastermind)
 print('You have ' + str(tries) + ' tries')
 while tries != 0:
     userChoice=[]
