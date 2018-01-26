@@ -1,37 +1,18 @@
 #include <iostream>
+using namespace std;
 
-using std::cout;
-using std::cin;
-using std::endl;
+
 
 int main() {
-	int number1{ 0 };
-	int number2{ 0 };
+	int x{ 0 };
+	int y{ 0 };
 
-	cout << "Enter two integers to compare: ";
-	cin >> number1 >> number2;
+	cout << "Enter two integers: ";
+	cin >> x >> y;
+	
+	cout << "The sum is " << x + y << endl;
+	cout << "The product is " << x * y << endl;
+	cout << "The difference is " << x - y << endl;
+	cout << "The quotient is " << x / y << endl;
 
-	if (number1 == number2) {
-		cout << number1 << " == " << number2 << endl;
-	}
-
-	if (number1 != number2) {
-		cout << number1 << " != " << number2 << endl;
-	}
-
-	if (number1 < number2) {
-		cout << number1 << " < " << number2 << endl;
-	}
-
-	if (number1 > number2) {
-		cout << number1 << " > " << number2 << endl;
-	}
-
-	if (number1 <= number2) {
-		cout << number1 << " <= " << number2 << endl;
-	}
-
-	if (number1 >= number2) {
-		cout << number1 << " >= " << number2 << endl;
-	}
 }
